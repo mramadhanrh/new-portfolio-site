@@ -1,0 +1,58 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:@next/next/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "."]
+      }
+    }
+  },
+  "plugins": [],
+  "rules": {
+    "linebreak-style": "off",
+    "space-infix-ops": "off",
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "import/extensions": "off",
+    "arrow-body-style": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off"
+  },
+  "overrides": [
+    {
+      "rules": {
+        "import/prefer-default-export": "off"
+      },
+      "files": ["*.ts"]
+    }
+  ]
+}
