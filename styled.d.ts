@@ -1,11 +1,21 @@
 import 'styled-components';
 
 declare module 'styled-components' {
-  export type ColorVariant = 'primary' | 'secondary';
+  export type ColorVariant =
+    | 'primary'
+    | 'secondary'
+    | 'black'
+    | 'white'
+    | 'coal'
+    | 'bridalHeath'
+    | 'sandyBeach'
+    | 'ecstasy'
+    | 'chelseaGem'
+    | 'pizzaz';
 
-  export type ButtonVariant = ColorVariant | 'text';
+  export type ButtonVariant = 'primary' | 'secondary' | 'text';
 
-  export type TextColorVariant = ColorVariant | 'black' | 'white' | 'coal';
+  export type TextColorVariant = 'primary' | 'secondary' | 'tertiary';
 
   export type ButtonSize = 'lg' | 'md' | 'sm';
 
