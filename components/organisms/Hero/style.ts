@@ -12,7 +12,7 @@ export const RowContainer = styled(Row)`
 export const Illustration = styled.div<{ src: string }>`
   background: url(${({ src }) => src}) no-repeat right;
   background-size: contain;
-  min-height: 800px;
+  min-height: 700px;
   width: 100%;
 `;
 
@@ -37,5 +37,5 @@ export const Subtitle = styled.h3`
 
 export const Description = styled.p`
   font-size: 20px;
-  color: ${({ theme }) => theme.textColor.coal};
+  color: ${({ theme }) => theme.textColor.tertiary};
 `;
