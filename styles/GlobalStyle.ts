@@ -1,8 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
-
-export const Gutter = styled.div`
-  margin: 0 75px;
-`;
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html,
