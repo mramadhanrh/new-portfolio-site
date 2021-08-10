@@ -1,21 +1,36 @@
 import { Row } from 'antd';
 import styled from 'styled-components';
 import { transparentize } from 'polished';
+import { mediaBreakpoint } from 'constants/breakpoint';
 
-export const RowContainer = styled(Row)`
+export const BioRowContainer = styled(Row)`
   background-color: ${({ theme }) => theme.color.bridalHeath};
   padding: 68px 0;
+
+  ${mediaBreakpoint.md} {
+    padding: 68px 0 88px;
+  }
+
+  ${mediaBreakpoint.lg} {
+    padding: 68px 0 108px;
+  }
 `;
 
 export const TextBackdrop = styled.h1`
-  font-size: 80px;
+  font-size: 48px;
   font-style: normal;
   font-weight: bold;
   margin-bottom: 10px;
 
   color: ${({ theme }) => theme.color.sandyBeach};
-  text-shadow: 20px 20px 0px
+  text-shadow: 10px 10px 0px
     ${({ theme }) => transparentize(0.95, theme.color.ecstasy)};
+
+  ${mediaBreakpoint.md} {
+    font-size: 80px;
+    text-shadow: 20px 20px 0px
+      ${({ theme }) => transparentize(0.95, theme.color.ecstasy)};
+  }
 `;
 
 export const BioTagline = styled.h2`
@@ -44,5 +59,15 @@ export const Testimony = styled.div`
   & > span {
     color: ${({ theme }) => theme.color.ecstasy};
     text-shadow: 1px 1px 0px ${({ theme }) => theme.color.pizzaz};
+  }
+`;
+
+export const CardRow = styled(Row)`
+  margin-top: -60px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  ${mediaBreakpoint.md} {
+    padding: 0;
   }
 `;
