@@ -11,7 +11,8 @@ declare module 'styled-components' {
     | 'sandyBeach'
     | 'ecstasy'
     | 'chelseaGem'
-    | 'pizzaz';
+    | 'pizzaz'
+    | 'tussock';
 
   export type ButtonVariant = 'primary' | 'secondary' | 'text';
 
