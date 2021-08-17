@@ -12,6 +12,7 @@ const defaultTheme: DefaultTheme = {
     ecstasy: '#F86F22',
     chelseaGem: '#A46200',
     pizzaz: '#FB8C00',
+    tussock: '#BB883C',
   },
   textColor: {
     primary: '#754600',
