@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { FC } from 'react';
-import Image from 'next/image';
 import { Col, Row } from 'antd';
-import { Title, Subtitle, GridContainer } from './style';
+import { Title, Subtitle, GridContainer, WorkItem } from './style';
 
 const mockImages = [
   'https://cdn.dribbble.com/users/59947/screenshots/16251880/media/5173333634e05e2c04a3d1af004fedc2.jpg?compress=1&resize=1200x900',
@@ -25,22 +24,21 @@ const mockImages = [
 ];
 
 const WorkCollection: FC = () => (
-  <>
-    <Row justify="center" align="middle">
-      <Col span={22}>
-        <Title>Check My Works Collection!</Title>
-        <Subtitle>Featured projects, which my best projects to show</Subtitle>
-      </Col>
-      <Col span={22}>
-        <GridContainer>
-          {mockImages.map((url, i) => {
-            const h = Math.floor(Math.random() * 600) + 200;
-            return <div style={{ height: h }} />;
-          })}
-        </GridContainer>
-      </Col>
-    </Row>
-  </>
+  <Row justify="center" align="middle">
+    <Col span={22}>
+      <Title>Check My Works Collection!</Title>
+      <Subtitle>Featured projects, which my best projects to show</Subtitle>
+    </Col>
+    <Col span={22}>
+      <GridContainer>
+        {mockImages.map((url, i) => (
+          <WorkItem key={i.toString()} background={url}>
+            <img src={url} />
+          </WorkItem>
+        ))}
+      </GridContainer>
+    </Col>
+  </Row>
 );
 
 export default WorkCollection;

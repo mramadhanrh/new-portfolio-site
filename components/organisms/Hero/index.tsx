@@ -18,11 +18,9 @@ const Hero: FC = () => (
         <span>based in Bandung</span>
       </Subtitle>
       <Description>
-        <Col xl={20} md={24}>
-          My name is Muhammad Ramadhan Rahmat, i am a creative and passionate
-          developer based in Bandung, specialize frontend for web, mobile, and
-          game.
-        </Col>
+        My name is Muhammad Ramadhan Rahmat, i am a creative and passionate
+        developer based in Bandung, specialize frontend for web, mobile, and
+        game.
       </Description>
 
       <Button variant="primary" size="lg">
