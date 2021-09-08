@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mediaBreakpoint } from 'constants/breakpoint';
 
 export const Title = styled.h3`
   font-style: normal;
@@ -20,12 +21,11 @@ export const Subtitle = styled.h4`
 `;
 
 export const GridContainer = styled.div`
-  columns: 3;
+  columns: 1;
   column-gap: 1rem;
 
   & div {
     width: 150px;
-    background: #ec985a;
     color: white;
     margin: 0 1rem 1rem 0;
     display: inline-block;
@@ -34,5 +34,25 @@ export const GridContainer = styled.div`
     font-family: system-ui;
     font-weight: 900;
     font-size: 2rem;
+  }
+
+  ${mediaBreakpoint.md} {
+    columns: 2;
+  }
+
+  ${mediaBreakpoint.xl} {
+    columns: 3;
+  }
+`;
+
+interface WorkItemProps {
+  background: string;
+}
+
+export const WorkItem = styled.div<WorkItemProps>`
+  background: url('${({ background }) => background}') no-repeat center / cover;
+
+  & > img {
+    width: 100%;
   }
 `;
