@@ -45,13 +45,7 @@ export const GridContainer = styled.div`
   }
 `;
 
-interface WorkItemProps {
-  background: string;
-}
-
-export const WorkItem = styled.div<WorkItemProps>`
-  background: url('${({ background }) => background}') no-repeat center / cover;
-
+export const WorkItem = styled.div`
   & > img {
     width: 100%;
   }

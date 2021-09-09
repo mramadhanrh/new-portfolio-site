@@ -13,6 +13,7 @@ const defaultTheme: DefaultTheme = {
     chelseaGem: '#A46200',
     pizzaz: '#FB8C00',
     tussock: '#BB883C',
+    grey: '#D4D4D4',
   },
   textColor: {
     primary: '#754600',

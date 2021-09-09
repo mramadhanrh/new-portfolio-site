@@ -3,6 +3,9 @@ import styled, {
   ButtonSize,
   ButtonVariant,
   FlattenSimpleInterpolation,
+  FlattenInterpolation,
+  ThemeProps,
+  DefaultTheme,
 } from 'styled-components';
 
 interface ButtonProps {
@@ -11,12 +14,19 @@ interface ButtonProps {
   disableGlow?: boolean;
 }
 
-type TButtonConfig = Record<ButtonSize, FlattenSimpleInterpolation>;
+type TButtonConfig = Record<
+  ButtonSize,
+  FlattenSimpleInterpolation | FlattenInterpolation<ThemeProps<DefaultTheme>>
+>;
 
 const ButtonConfig: TButtonConfig = {
   lg: css`
     font-size: 24px;
     padding: 14px 20px;
+
+    &:hover {
+      box-shadow: 5px 5px 0px 0px ${({ theme }) => theme.color.secondary};
+    }
   `,
   md: css`
     font-size: 18px;
