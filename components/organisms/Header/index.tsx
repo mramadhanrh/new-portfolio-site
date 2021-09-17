@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import { Col, Row } from 'antd';
 import HeadMenu from 'components/molecules/HeadMenu';
-import { Logo } from './style';
+import { TagText } from './style';
 
 const Header: FC = () => (
-  <Row justify="space-around">
+  <Row align="middle" justify="space-around">
     <Col span={10}>
-      <Logo src="/logo.jpg" />
+      <TagText>RAMA</TagText>
     </Col>
     <Col span={10}>
       <HeadMenu />
