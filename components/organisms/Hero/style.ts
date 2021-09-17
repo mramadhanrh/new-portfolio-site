@@ -38,4 +38,5 @@ export const Subtitle = styled.h3`
 export const Description = styled.p`
   font-size: 20px;
   color: ${({ theme }) => theme.textColor.tertiary};
+  text-align: justify;
 `;

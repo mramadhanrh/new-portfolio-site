@@ -11,8 +11,8 @@ import {
 
 const Hero: FC = () => (
   <RowContainer justify="space-around" align="middle">
-    <Col id="info" span={10}>
-      <Title>Hi, call Me Ramadhan</Title>
+    <Col id="info" span={12}>
+      <Title>Hi, it&apos;s me Rama</Title>
       <Subtitle>
         <span>Software Engineer </span>
         <span>based in Bandung</span>
@@ -27,7 +27,7 @@ const Hero: FC = () => (
         Get in touch with me 👋
       </Button>
     </Col>
-    <Col span={10}>
+    <Col span={8}>
       <Illustration src="/illustration.png" />
     </Col>
   </RowContainer>

@@ -19,14 +19,20 @@ const BioInfo: FC<BioInfoProps> = () => (
       <Col xs={20} lg={10}>
         <TextBackdrop>Experience</TextBackdrop>
         <Row justify="start">
-          <Col xs={12} sm={10} md={8}>
+          <Col xs={12} sm={10} md={8} lg={7}>
             <Testimony>
               <span>4+</span>
               <br />
               Years of experience
             </Testimony>
           </Col>
-          <Col xs={12} sm={10} md={8}>
+          <Col
+            xs={{ span: 10 }}
+            sm={10}
+            md={8}
+            lg={{ span: 7, push: 6 }}
+            xl={{ push: 4 }}
+          >
             <Testimony>
               <span>20+</span>
               <br />
