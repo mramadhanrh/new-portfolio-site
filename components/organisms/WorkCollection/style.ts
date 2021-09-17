@@ -24,7 +24,7 @@ export const GridContainer = styled.div`
   columns: 1;
   column-gap: 1rem;
 
-  & div {
+  & > div {
     width: 150px;
     color: white;
     margin: 0 1rem 1rem 0;
@@ -46,7 +46,14 @@ export const GridContainer = styled.div`
 `;
 
 export const WorkItem = styled.div`
-  & > img {
-    width: 100%;
+  & > div {
+    position: unset !important;
+
+    & > img {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
   }
 `;
