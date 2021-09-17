@@ -45,6 +45,7 @@ export const BioDescription = styled.p`
   font-weight: normal;
   color: ${({ theme }) => theme.color.chelseaGem};
   opacity: 0.75;
+  text-align: justify;
 `;
 
 export const Testimony = styled.div`
