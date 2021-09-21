@@ -6,7 +6,7 @@ import NavButton from 'components/atoms/NavButton';
 const HeadMenu: FC = () => (
   <>
     <Row justify="end">
-      <Col md={0} lg={24}>
+      <Col xs={0} lg={24}>
         <Row justify="end">
           <Col>
             <Button variant="text">Services</Button>

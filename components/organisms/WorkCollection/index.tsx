@@ -13,7 +13,7 @@ const WorkCollection: FC = () => (
     </Col>
     <Col span={22}>
       <GridContainer>
-        {new Array(100)
+        {new Array(20)
           .fill('https://source.unsplash.com/random')
           .map((url, i) => (
             <WorkItem key={i.toString()} src={`${url}?id=${i}`} />
