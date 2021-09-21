@@ -25,15 +25,8 @@ export const GridContainer = styled.div`
   column-gap: 1rem;
 
   & > div {
-    width: 150px;
-    color: white;
     margin: 0 1rem 1rem 0;
-    display: inline-block;
     width: 100%;
-    text-align: center;
-    font-family: system-ui;
-    font-weight: 900;
-    font-size: 2rem;
   }
 
   ${mediaBreakpoint.md} {

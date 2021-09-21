@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import { Col, Row } from 'antd';
 import HeadMenu from 'components/molecules/HeadMenu';
-import { TagText } from './style';
+import Logo from 'components/atoms/Logo';
 
 const Header: FC = () => (
-  <Row align="middle" justify="space-around">
-    <Col span={10}>
-      <TagText>RAMA</TagText>
+  <Row align="middle" justify="center">
+    <Col xs={10} lg={11}>
+      <Logo />
     </Col>
-    <Col span={10}>
+    <Col xs={10} lg={11}>
       <HeadMenu />
     </Col>
   </Row>

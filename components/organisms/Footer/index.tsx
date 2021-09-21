@@ -1,16 +1,17 @@
 import { Row, Col } from 'antd';
-import { ColorBlock, TagText, LicenseText } from './style';
+import Logo from 'components/atoms/Logo';
+import { FooterInfoRow, ColorBlock, LicenseText } from './style';
 
 const Footer = () => (
   <>
-    <Row align="middle" justify="space-between">
+    <FooterInfoRow align="middle" justify="space-between">
       <Col span={12} push={1}>
-        <TagText>RAMA</TagText>
+        <Logo />
       </Col>
       <Col span={12} pull={1}>
         <LicenseText>© 2021 ALL RIGHTS RESERVED</LicenseText>
       </Col>
-    </Row>
+    </FooterInfoRow>
     <Row>
       <Col span={15}>
         <ColorBlock color="primary" />

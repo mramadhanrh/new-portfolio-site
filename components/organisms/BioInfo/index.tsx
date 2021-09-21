@@ -58,13 +58,13 @@ const BioInfo: FC<BioInfoProps> = () => (
     </BioRowContainer>
 
     <CardRow justify="center" align="middle">
-      <Col xs={{ span: 24 }} md={{ span: 6 }}>
+      <Col xs={{ span: 22 }} md={{ span: 6 }}>
         <SkillCard>{`Web\nDevelopment`}</SkillCard>
       </Col>
-      <Col xs={{ span: 24 }} md={{ span: 6, offset: 2 }}>
+      <Col xs={{ span: 22 }} md={{ span: 6, offset: 1 }}>
         <SkillCard>{`App\nDevelopment`}</SkillCard>
       </Col>
-      <Col xs={{ span: 24 }} md={{ span: 6, offset: 2 }}>
+      <Col xs={{ span: 22 }} md={{ span: 6, offset: 1 }}>
         <SkillCard>{`Games\nDevelopment`}</SkillCard>
       </Col>
     </CardRow>

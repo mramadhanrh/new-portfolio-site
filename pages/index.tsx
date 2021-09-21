@@ -11,10 +11,10 @@ import { Container } from 'styles/HomeStyle';
 const Home: FC = () => (
   <Container>
     <Header />
-    <Hero />
+    <Hero src="/illustration.png" />
     <BioInfo />
     <WorkCollection />
-    <WorkInquiry />
+    {/* <WorkInquiry /> */}
     <Footer />
   </Container>
 );
