@@ -13,7 +13,8 @@ declare module 'styled-components' {
     | 'chelseaGem'
     | 'pizzaz'
     | 'tussock'
-    | 'grey';
+    | 'grey'
+    | 'alto';
 
   export type ButtonVariant = 'primary' | 'secondary' | 'text';
 

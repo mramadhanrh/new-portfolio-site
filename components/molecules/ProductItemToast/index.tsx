@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import Tag from 'components/atoms/Tag';
-import { Row, Col } from 'antd';
+import { Col } from 'antd';
 import { Container, Wrapper, Title, TagContainer } from './style';
 
-const WorkItemToast: FC = () => (
+const ProductItemToast: FC = () => (
   <Container>
     <Wrapper justify="start">
       <Col span={24}>
@@ -23,4 +23,4 @@ const WorkItemToast: FC = () => (
   </Container>
 );
 
-export default WorkItemToast;
+export default ProductItemToast;

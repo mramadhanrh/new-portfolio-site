@@ -1,21 +1,21 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import { Container, Overlay } from './style';
-import WorkItemToast from '../WorkItemToast';
+import ProductItemToast from '../ProductItemToast';
 
 interface WorkItemProps {
   src: string;
 }
 
-const WorkItem: FC<WorkItemProps> = ({ ...props }) => (
+const ProductItem: FC<WorkItemProps> = ({ ...props }) => (
   <>
     <Container>
       <Overlay>
-        <WorkItemToast />
+        <ProductItemToast />
       </Overlay>
       <Image layout="fill" {...props} />
     </Container>
   </>
 );
 
-export default WorkItem;
+export default ProductItem;

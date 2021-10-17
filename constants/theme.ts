@@ -14,6 +14,7 @@ const defaultTheme: DefaultTheme = {
     pizzaz: '#FB8C00',
     tussock: '#BB883C',
     grey: '#D4D4D4',
+    alto: '#D5D5D5',
   },
   textColor: {
     primary: '#754600',
