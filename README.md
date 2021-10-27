@@ -1,4 +1,5 @@
 <a href="https://codeclimate.com/github/mramadhanrh/new-portfolio-site/maintainability"><img src="https://api.codeclimate.com/v1/badges/b1668bcd7d66f08f8298/maintainability" /></a>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
