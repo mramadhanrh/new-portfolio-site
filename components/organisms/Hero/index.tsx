@@ -18,9 +18,10 @@ interface HeroProps {
   src?: string;
   buttonText?: string;
   buttonEmoji?: string;
+  onClick?(): void;
 }
 
-const XsHero: FC<HeroProps> = ({
+const Hero: FC<HeroProps> = ({
   title,
   roles,
   location,
@@ -28,63 +29,43 @@ const XsHero: FC<HeroProps> = ({
   src,
   buttonText,
   buttonEmoji,
+  onClick,
 }) => (
-  <>
-    <Col id="info" xs={24} lg={0}>
-      <Illustration src={src} />
-    </Col>
-    <Col span={20}>
-      <Title>{title}</Title>
-      <Subtitle>
-        <span>{roles} </span>
-        <span>based in {location}</span>
-      </Subtitle>
-      <Description>{description}</Description>
-      <Button variant="primary" size="sm">
-        {buttonText} <Emoji>{buttonEmoji}</Emoji>
-      </Button>
-    </Col>
-  </>
-);
-
-const LgHero: FC<HeroProps> = ({
-  title,
-  roles,
-  location,
-  description,
-  src,
-  buttonText,
-  buttonEmoji,
-}) => (
-  <>
-    <Col id="info" xs={0} lg={11}>
-      <Title>{title}</Title>
-      <Subtitle>
-        <span>{roles} </span>
-        <span>based in {location}</span>
-      </Subtitle>
-      <Description>{description}</Description>
-
-      <Button variant="primary" size="lg">
-        {buttonText} <Emoji>{buttonEmoji}</Emoji>
-      </Button>
-    </Col>
-    <Col xs={0} lg={9}>
-      <Illustration src={src} />
-    </Col>
-  </>
-);
-
-const Hero: FC<HeroProps> = (props) => (
   <Row>
-    <Col xs={0} lg={24}>
+    <Col span={24}>
       <RowContainer justify="space-around" align="middle">
-        <LgHero {...props} />
-      </RowContainer>
-    </Col>
-    <Col xs={24} lg={0}>
-      <RowContainer justify="center" align="middle">
-        <XsHero {...props} />
+        <Col xs={24} lg={0}>
+          <Illustration src={src} />
+        </Col>
+
+        <Col id="info" lg={11}>
+          <Row justify="center">
+            <Col xs={20} lg={24}>
+              <Title>{title}</Title>
+              <Subtitle>
+                <span>{roles} </span>
+                <span>based in {location}</span>
+              </Subtitle>
+              <Description>{description}</Description>
+            </Col>
+
+            <Col xs={24} lg={0}>
+              <Button variant="primary" size="sm" onClick={onClick}>
+                {buttonText} <Emoji>{buttonEmoji}</Emoji>
+              </Button>
+            </Col>
+
+            <Col xs={0} lg={24}>
+              <Button variant="primary" size="lg" onClick={onClick}>
+                {buttonText} <Emoji>{buttonEmoji}</Emoji>
+              </Button>
+            </Col>
+          </Row>
+        </Col>
+
+        <Col xs={0} lg={9}>
+          <Illustration src={src} />
+        </Col>
       </RowContainer>
     </Col>
   </Row>
