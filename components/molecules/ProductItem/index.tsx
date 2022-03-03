@@ -4,16 +4,17 @@ import { Container, Overlay } from './style';
 import ProductItemToast from '../ProductItemToast';
 
 interface WorkItemProps {
-  src: string;
+  src?: string;
+  onClick?(): void;
 }
 
-const ProductItem: FC<WorkItemProps> = ({ ...props }) => (
+const ProductItem: FC<WorkItemProps> = ({ src, onClick = () => {} }) => (
   <>
-    <Container>
+    <Container onClick={onClick}>
       <Overlay>
         <ProductItemToast />
       </Overlay>
-      <Image layout="fill" {...props} />
+      <Image layout="fill" src={src} />
     </Container>
   </>
 );
