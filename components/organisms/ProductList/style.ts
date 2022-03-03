@@ -3,21 +3,28 @@ import { mediaBreakpoint } from 'constants/breakpoint';
 
 export const Title = styled.h3`
   font-style: normal;
+  font-size: 21px;
   font-weight: bold;
-  font-size: 64px;
-  line-height: 96px;
   color: ${({ theme }) => theme.textColor.primary};
   margin-bottom: 0;
 
   margin-top: 80px;
+
+  ${mediaBreakpoint.lg} {
+    font-size: 64px;
+  }
 `;
 
 export const Subtitle = styled.h4`
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  text-align: ;
   color: ${({ theme }) => theme.color.tussock};
+
+  ${mediaBreakpoint.lg} {
+    font-size: 24px;
+  }
 `;
 
 export const GridContainer = styled.div`
