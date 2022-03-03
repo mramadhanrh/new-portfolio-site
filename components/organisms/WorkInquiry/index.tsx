@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import InquiryCard from 'components/molecules/InquiryCard';
 import { Row, Col } from 'antd';
+import InquiryCard from 'components/molecules/InquiryCard';
 import InquiryDetail from 'components/molecules/InquiryDetail';
 
 const WorkInquiry: FC = () => (
   <>
     <Row align="middle" justify="center">
-      <Col span={18}>
+      <Col xs={20} md={18}>
         <InquiryCard />
       </Col>
     </Row>
