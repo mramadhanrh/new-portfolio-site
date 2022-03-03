@@ -27,18 +27,27 @@ export const TextBackdrop = styled.h1`
     ${({ theme }) => transparentize(0.95, theme.color.ecstasy)};
 
   ${mediaBreakpoint.md} {
-    font-size: 80px;
+    font-size: 72px;
     text-shadow: 20px 20px 0px
       ${({ theme }) => transparentize(0.95, theme.color.ecstasy)};
+  }
+
+  ${mediaBreakpoint.lg} {
+    font-size: 80px;
   }
 `;
 
 export const BioTagline = styled.h2`
   font-weight: bold;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 24px;
   color: ${({ theme }) => theme.color.primary};
-  text-shadow: 2px 2px 0px ${({ theme }) => theme.color.secondary};
+  text-shadow: 1px 1px 0px ${({ theme }) => theme.color.secondary};
+
+  ${mediaBreakpoint.md} {
+    text-shadow: 2px 2px 0px ${({ theme }) => theme.color.secondary};
+    font-size: 36px;
+    line-height: 54px;
+  }
 `;
 
 export const BioDescription = styled.p`
