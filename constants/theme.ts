@@ -25,11 +25,13 @@ const defaultTheme: DefaultTheme = {
     primary: '#754600',
     secondary: '#F86F22',
     text: 'transparent',
+    link: 'transparent',
   },
   buttonTextColor: {
     primary: '#FFFFFF',
     secondary: '#000000',
     text: '#000000',
+    link: '#000000',
   },
 };
 
