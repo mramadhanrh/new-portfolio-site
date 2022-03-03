@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { mediaBreakpoint } from 'constants/breakpoint';
 
 export const RowContainer = styled(Row)`
-  margin-top: 27px;
+  margin: 27px 0;
   text-align: center;
 
   & > div {
@@ -83,4 +83,9 @@ export const Description = styled.p`
   ${mediaBreakpoint.xl} {
     font-size: 20px;
   }
+`;
+
+export const Emoji = styled.span`
+  font-weight: 400;
+  vertical-align: middle;
 `;

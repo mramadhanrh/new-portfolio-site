@@ -7,48 +7,66 @@ import {
   Subtitle,
   Title,
   Description,
+  Emoji,
 } from './style';
 
 interface HeroProps {
+  title?: string;
+  roles?: string;
+  location?: string;
+  description?: string;
   src?: string;
+  buttonText?: string;
+  buttonEmoji?: string;
 }
 
-const XsHero: FC<HeroProps> = ({ src }) => (
+const XsHero: FC<HeroProps> = ({
+  title,
+  roles,
+  location,
+  description,
+  src,
+  buttonText,
+  buttonEmoji,
+}) => (
   <>
     <Col id="info" xs={24} lg={0}>
       <Illustration src={src} />
     </Col>
     <Col span={20}>
-      <Title>Hi, it&apos;s me Rama</Title>
+      <Title>{title}</Title>
       <Subtitle>
-        <span>Software Engineer </span>
-        <span>based in Bandung</span>
+        <span>{roles} </span>
+        <span>based in {location}</span>
       </Subtitle>
-      <Description>
-        My name is Muhammad Ramadhan Rahmat, i am a creative and passionate
-        developer based in Bandung, specialize frontend for web, mobile, and
-        game.
-      </Description>
+      <Description>{description}</Description>
+      <Button variant="primary" size="sm">
+        {buttonText} <Emoji>{buttonEmoji}</Emoji>
+      </Button>
     </Col>
   </>
 );
 
-const LgHero: FC<HeroProps> = ({ src }) => (
+const LgHero: FC<HeroProps> = ({
+  title,
+  roles,
+  location,
+  description,
+  src,
+  buttonText,
+  buttonEmoji,
+}) => (
   <>
     <Col id="info" xs={0} lg={11}>
-      <Title>Hi, it&apos;s me Rama</Title>
+      <Title>{title}</Title>
       <Subtitle>
-        <span>Software Engineer </span>
-        <span>based in Bandung</span>
+        <span>{roles} </span>
+        <span>based in {location}</span>
       </Subtitle>
-      <Description>
-        My name is Muhammad Ramadhan Rahmat, i am a creative and passionate
-        developer based in Bandung, specialize frontend for web, mobile, and
-        game.
-      </Description>
+      <Description>{description}</Description>
 
       <Button variant="primary" size="lg">
-        Get in touch with me 👋
+        {buttonText} <Emoji>{buttonEmoji}</Emoji>
       </Button>
     </Col>
     <Col xs={0} lg={9}>
