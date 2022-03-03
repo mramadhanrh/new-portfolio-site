@@ -1,13 +1,37 @@
+import { Modal } from 'antd';
 import styled from 'styled-components';
+import Button from 'components/atoms/Button';
 
-export const Container = styled.div`
-  position: fixed;
+export const Container = styled(Modal)`
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+  padding: 50px;
+
+  & .ant-modal-body {
+    display: flex;
+    padding: 0;
+    height: 100%;
+  }
+
+  & .ant-modal-content {
+    height: 100%;
+  }
+
+  /* position: fixed;
   left: 0;
   top: 0;
   z-index: 9999;
   width: 100%;
   height: 100%;
-  padding: 100px 50px;
+  padding: 50px 0;
+
+  & > .ant-row {
+    height: 100%;
+  } */
 `;
 
 export const ModalWrapper = styled.div`
@@ -53,7 +77,7 @@ export const ImageOverlay = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  padding: 15px 30px 25px;
+  padding: 48px 30px 25px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -92,4 +116,17 @@ export const CreationDate = styled.h6`
   font-size: 18px;
   line-height: 27px;
   color: ${({ theme }) => theme.color.alto};
+`;
+
+export const CloseButton = styled(Button)`
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-size: 18px;
+  padding: 8px;
+  z-index: 1;
+
+  & svg {
+    fill: ${({ theme }) => theme.color.grey};
+  }
 `;
