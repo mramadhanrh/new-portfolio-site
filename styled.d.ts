@@ -16,7 +16,7 @@ declare module 'styled-components' {
     | 'grey'
     | 'alto';
 
-  export type ButtonVariant = 'primary' | 'secondary' | 'text';
+  export type ButtonVariant = 'primary' | 'secondary' | 'text' | 'link';
 
   export type TextColorVariant = 'primary' | 'secondary' | 'tertiary';
 
