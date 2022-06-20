@@ -16,13 +16,13 @@ const ProductList: FC = () => {
       <ProductModal onCancel={toggleModalVisible} visible={modalVisible} />
       <Row justify="center" align="middle" style={{ marginBottom: 90 }}>
         <Col span={22}>
-          <Title>Check My Works Collection!</Title>
+          <Title>Check My Work Collection!</Title>
           <Subtitle>Featured projects, which my best projects to show</Subtitle>
         </Col>
         <Col span={22}>
           <GridContainer>
             {new Array(20)
-              .fill('https://source.unsplash.com/random')
+              .fill('https://source.unsplash.com/search/photos?query=tech')
               .map((url, i) => (
                 <ProductItem
                   key={i.toString()}

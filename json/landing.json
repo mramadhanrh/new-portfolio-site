@@ -3,9 +3,8 @@
     "title": "Hi, it's me Rama",
     "roles": "Software Engineer",
     "location": "Bandung",
-    "description": "My name is Muhammad Ramadhan Rahmat, i am a creative and passionate developer based in Bandung, specialize frontend for web, mobile, and game.",
-    "buttonText": "Get in touch with me",
-    "buttonEmoji": "👋",
+    "description": "My name is Muhammad Ramadhan Rahmat, i am a creative and passionate developer based in Bandung, specializing in frontend for web, mobile, and game development.",
+    "buttonText": "Get in touch with me 👋",
     "src": "/illustration.png"
   }
 }

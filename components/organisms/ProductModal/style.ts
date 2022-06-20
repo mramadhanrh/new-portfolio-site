@@ -1,4 +1,5 @@
-import { Modal } from 'antd';
+import { mediaBreakpoint } from 'constants/breakpoint';
+import { Col, Modal, Row } from 'antd';
 import styled from 'styled-components';
 import Button from 'components/atoms/Button';
 
@@ -19,19 +20,8 @@ export const Container = styled(Modal)`
 
   & .ant-modal-content {
     height: 100%;
+    overflow: hidden;
   }
-
-  /* position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-
-  & > .ant-row {
-    height: 100%;
-  } */
 `;
 
 export const ModalWrapper = styled.div`
@@ -76,11 +66,38 @@ export const ImageOverlay = styled.div`
   }
 `;
 
-export const ContentWrapper = styled.div`
-  padding: 48px 30px 25px;
+export const ContentCol = styled(Col)`
+  padding: 25px 30px 25px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: auto;
+
+  ${mediaBreakpoint.lg} {
+    padding: 48px 30px 25px;
+  }
+`;
+
+export const ProductRow = styled(Row)`
+  flex-flow: column;
+  flex-direction: column;
+
+  & > .ant-col {
+    flex: auto;
+  }
+
+  & > .ant-col:first-child {
+    flex: none;
+  }
+
+  ${mediaBreakpoint.lg} {
+    flex-flow: row;
+    flex-direction: row;
+
+    & > .ant-col:first-child {
+      flex: auto;
+    }
+  }
 `;
 
 export const Description = styled.p`

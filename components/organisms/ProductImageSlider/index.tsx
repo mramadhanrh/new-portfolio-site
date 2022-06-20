@@ -8,7 +8,7 @@ import {
   StepWrapper,
 } from './style';
 
-const ProductImageSlider: FC<{ data: string[] }> = ({
+const ProductImageSlider: FC<{ data?: string[] }> = ({
   data = [
     'sample-modal-pic0.png',
     'sample-modal-pic1.png',

@@ -6,6 +6,7 @@ export const Container = styled.div`
   width: 100%;
   overflow: hidden;
   cursor: pointer;
+  min-height: 200px;
 `;
 
 export const GradientOverlay = styled.div`

@@ -7,7 +7,6 @@ import {
   Subtitle,
   Title,
   Description,
-  Emoji,
 } from './style';
 
 interface HeroProps {
@@ -28,7 +27,6 @@ const Hero: FC<HeroProps> = ({
   description,
   src,
   buttonText,
-  buttonEmoji,
   onClick,
 }) => (
   <Row>
@@ -51,13 +49,13 @@ const Hero: FC<HeroProps> = ({
 
             <Col xs={24} lg={0}>
               <Button variant="primary" size="sm" onClick={onClick}>
-                {buttonText} <Emoji>{buttonEmoji}</Emoji>
+                {buttonText}
               </Button>
             </Col>
 
             <Col xs={0} lg={24}>
               <Button variant="primary" size="lg" onClick={onClick}>
-                {buttonText} <Emoji>{buttonEmoji}</Emoji>
+                {buttonText}
               </Button>
             </Col>
           </Row>

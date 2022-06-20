@@ -22,7 +22,7 @@ type TButtonConfig = Record<
 const ButtonConfig: TButtonConfig = {
   lg: css`
     font-size: 24px;
-    padding: 14px 20px;
+    padding: 18px 24px;
 
     &:hover {
       box-shadow: 5px 5px 0px 0px ${({ theme }) => theme.color.secondary};
@@ -71,7 +71,7 @@ const Button = styled.button<ButtonProps>`
   ${({ disableGlow }) =>
     !disableGlow &&
     css`
-      filter: drop-shadow(0px 5px 10px rgba(117, 70, 0, 0.3));
+      filter: drop-shadow(0px 5px 10px rgba(117, 70, 0, 0.2));
     `}
 `;
 

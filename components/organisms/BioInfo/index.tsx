@@ -27,7 +27,7 @@ const BioInfo: FC<BioInfoProps> = () => (
             </Testimony>
           </Col>
           <Col
-            xs={{ span: 10 }}
+            xs={10}
             sm={10}
             md={8}
             lg={{ span: 7, push: 6 }}
@@ -43,7 +43,7 @@ const BioInfo: FC<BioInfoProps> = () => (
       </Col>
       <Col xs={20} lg={10}>
         <BioTagline>
-          When creativity met logic <br /> that’s when the magic happens
+          When creativity meets logic, <br /> that’s when the magic happens
         </BioTagline>
         <BioDescription>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

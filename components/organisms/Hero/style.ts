@@ -84,8 +84,3 @@ export const Description = styled.p`
     font-size: 20px;
   }
 `;
-
-export const Emoji = styled.span`
-  font-weight: 400;
-  vertical-align: middle;
-`;
