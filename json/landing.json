@@ -5,6 +5,7 @@
     "location": "Bandung",
     "description": "My name is Muhammad Ramadhan Rahmat, i am a creative and passionate developer based in Bandung, specializing in frontend for web, mobile, and game development.",
     "buttonText": "Get in touch with me 👋",
-    "src": "/illustration.png"
+    "src": "/profile-pic.png",
+    "href": "https://linkedin.com/in/mramadhanrh"
   }
 }

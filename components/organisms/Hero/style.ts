@@ -11,15 +11,14 @@ export const RowContainer = styled(Row)`
   }
 
   ${mediaBreakpoint.lg} {
+    min-height: 600px;
     & > div {
       text-align: left;
     }
   }
 `;
 
-export const Illustration = styled.div<{
-  src: string;
-}>`
+export const Illustration = styled.div<{ src: string }>`
   background: url(${({ src }) => src}) no-repeat center;
   background-size: contain;
   width: 100%;
@@ -29,6 +28,33 @@ export const Illustration = styled.div<{
   ${mediaBreakpoint.lg} {
     min-height: 600px;
     margin-bottom: 0;
+  }
+`;
+
+export const HeroPicture = styled.div<{ src: string }>`
+  background: url(${({ src }) => src}) no-repeat center;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 180px;
+  overflow: hidden;
+  margin: 0 auto 30px auto;
+  box-shadow: 5px 5px 0px 0px ${({ theme }) => theme.color.secondary};
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  filter: grayscale(0.6);
+
+  ${mediaBreakpoint.lg} {
+    margin-left: auto;
+    width: 360px;
+    height: 360px;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    filter: grayscale(0);
+    transform: translate(-5px, -5px);
+    box-shadow: 15px 15px 0px 0px ${({ theme }) => theme.color.secondary};
   }
 `;
 

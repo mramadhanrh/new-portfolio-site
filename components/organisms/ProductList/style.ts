@@ -8,8 +8,6 @@ export const Title = styled.h3`
   color: ${({ theme }) => theme.textColor.primary};
   margin-bottom: 0;
 
-  margin-top: 80px;
-
   ${mediaBreakpoint.lg} {
     font-size: 64px;
   }
@@ -19,7 +17,6 @@ export const Subtitle = styled.h4`
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  text-align: ;
   color: ${({ theme }) => theme.color.tussock};
 
   ${mediaBreakpoint.lg} {

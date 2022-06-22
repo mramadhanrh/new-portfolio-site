@@ -53,7 +53,7 @@ const Button = styled.button<ButtonProps>`
   border: none;
   font-weight: bold;
   transition-property: box-shadow, background-color, color;
-  transition: 0.05s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   box-shadow: 0px 0px 0px 0px #f86f22;
 
   background-color: ${({ theme, variant }) => theme.buttonColor[variant]};

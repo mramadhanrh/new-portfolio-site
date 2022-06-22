@@ -76,6 +76,7 @@ export const CardRow = styled(Row)`
   margin-top: -60px;
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 80px;
 
   ${mediaBreakpoint.md} {
     padding: 0;

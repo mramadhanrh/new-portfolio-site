@@ -2,11 +2,11 @@ import { Col, Row } from 'antd';
 import { FC } from 'react';
 import Button from 'components/atoms/Button';
 import {
-  Illustration,
   RowContainer,
   Subtitle,
   Title,
   Description,
+  HeroPicture,
 } from './style';
 
 interface HeroProps {
@@ -15,8 +15,8 @@ interface HeroProps {
   location?: string;
   description?: string;
   src?: string;
+  href?: string;
   buttonText?: string;
-  buttonEmoji?: string;
   onClick?(): void;
 }
 
@@ -26,6 +26,7 @@ const Hero: FC<HeroProps> = ({
   location,
   description,
   src,
+  href,
   buttonText,
   onClick,
 }) => (
@@ -33,7 +34,7 @@ const Hero: FC<HeroProps> = ({
     <Col span={24}>
       <RowContainer justify="space-around" align="middle">
         <Col xs={24} lg={0}>
-          <Illustration src={src} />
+          <HeroPicture src={src} />
         </Col>
 
         <Col id="info" lg={11}>
@@ -54,15 +55,17 @@ const Hero: FC<HeroProps> = ({
             </Col>
 
             <Col xs={0} lg={24}>
-              <Button variant="primary" size="lg" onClick={onClick}>
-                {buttonText}
-              </Button>
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                <Button variant="primary" size="lg" onClick={onClick}>
+                  {buttonText}
+                </Button>
+              </a>
             </Col>
           </Row>
         </Col>
 
         <Col xs={0} lg={9}>
-          <Illustration src={src} />
+          <HeroPicture src={src} />
         </Col>
       </RowContainer>
     </Col>

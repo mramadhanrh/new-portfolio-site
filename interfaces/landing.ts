@@ -1,4 +1,4 @@
-export interface Hero {
+export interface HeroData {
   title: string;
   roles: string;
   location: string;
@@ -8,5 +8,5 @@ export interface Hero {
 }
 
 export interface LandingData {
-  hero: Hero;
+  hero: HeroData;
 }

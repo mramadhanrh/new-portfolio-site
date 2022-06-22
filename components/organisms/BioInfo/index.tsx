@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { forwardRef } from 'react';
 import { Row, Col } from 'antd';
 
 import SkillCard from 'components/atoms/SkillCard';
@@ -11,11 +11,9 @@ import {
   CardRow,
 } from './style';
 
-interface BioInfoProps {}
-
-const BioInfo: FC<BioInfoProps> = () => (
+const BioInfo = forwardRef<HTMLDivElement>((_, ref) => (
   <>
-    <BioRowContainer justify="space-around" align="middle">
+    <BioRowContainer ref={ref} justify="space-around" align="middle">
       <Col xs={20} lg={10}>
         <TextBackdrop>Experience</TextBackdrop>
         <Row justify="start">
@@ -69,6 +67,6 @@ const BioInfo: FC<BioInfoProps> = () => (
       </Col>
     </CardRow>
   </>
-);
+));
 
 export default BioInfo;
