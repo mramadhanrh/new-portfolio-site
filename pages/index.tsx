@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 
 import { createRef, FC, RefObject, useRef } from 'react';
-import { useRouter } from 'next/router';
 import withThemes from 'components/hoc/withThemes';
 import Hero from 'components/organisms/Hero';
 import Footer from 'components/organisms/Footer';
