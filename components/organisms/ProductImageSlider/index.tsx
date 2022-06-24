@@ -1,5 +1,4 @@
 import { FC, useMemo, useState } from 'react';
-import { Col, Row } from 'antd';
 import {
   Container,
   DotStep,
@@ -18,7 +17,10 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
   const [activeIndex, setActiveIndex] = useState(0);
   const [isOnTransition, setOnTransition] = useState(false);
   const [isNextDirection, setNextDirection] = useState(false);
-  const currentIndex = useMemo(() => activeIndex % data.length, [activeIndex]);
+  const currentIndex = useMemo(
+    () => activeIndex % data.length,
+    [activeIndex, data.length],
+  );
 
   const imageList = useMemo(() => {
     if (data.length > 0 && data.length < 3)
@@ -28,11 +30,11 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
 
   const nextIndex = useMemo(
     () => (activeIndex + 1) % imageList.length,
-    [activeIndex],
+    [activeIndex, imageList.length],
   );
   const prevIndex = useMemo(
     () => (activeIndex === 0 ? imageList.length - 1 : activeIndex - 1),
-    [activeIndex],
+    [activeIndex, imageList.length],
   );
 
   const getOffset = (idx: number) => {
