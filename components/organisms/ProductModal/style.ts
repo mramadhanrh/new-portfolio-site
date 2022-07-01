@@ -3,14 +3,14 @@ import { Col, Modal, Row } from 'antd';
 import styled from 'styled-components';
 import Button from 'components/atoms/Button';
 
-export const Container = styled(Modal)`
+export const ModalContainer = styled(Modal)`
   top: 0px;
   width: 100%;
   height: 100%;
   max-width: unset;
   margin: 0;
   padding: 0;
-  padding: 50px;
+  padding: 20px;
 
   & .ant-modal-body {
     display: flex;
@@ -21,6 +21,10 @@ export const Container = styled(Modal)`
   & .ant-modal-content {
     height: 100%;
     overflow: hidden;
+  }
+
+  ${mediaBreakpoint.lg} {
+    padding: 50px;
   }
 `;
 
@@ -79,6 +83,7 @@ export const ContentCol = styled(Col)`
 `;
 
 export const ProductRow = styled(Row)`
+  width: 100%;
   flex-flow: column;
   flex-direction: column;
 

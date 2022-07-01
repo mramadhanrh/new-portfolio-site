@@ -3,7 +3,7 @@ import { Col, Row, ModalProps } from 'antd';
 import ProductImageSlider from '../ProductImageSlider';
 
 import {
-  Container,
+  ModalContainer,
   ContentCol,
   CreationDate,
   Description,
@@ -20,7 +20,7 @@ const ProductModal: FC<ProductModalProps> = ({
   description = '',
   ...props
 }) => (
-  <Container width="100%" footer={null} {...props}>
+  <ModalContainer width="100%" footer={null} {...props}>
     <ProductRow>
       <Col xs={24} lg={11}>
         <ProductImageSlider />
@@ -38,7 +38,7 @@ const ProductModal: FC<ProductModalProps> = ({
         </Row>
       </ContentCol>
     </ProductRow>
-  </Container>
+  </ModalContainer>
 );
 
 export default ProductModal;

@@ -39,7 +39,6 @@ export const Overlay = styled.div`
 
 export const Container = styled.div`
   position: relative;
-
   & > div:nth-child(2) {
     position: unset !important;
 

@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
+import { WorkItem } from 'components/organisms/ProductList/style';
 import { Container, Overlay } from './style';
 import ProductItemToast from '../ProductItemToast';
 
@@ -14,7 +15,9 @@ const ProductItem: FC<WorkItemProps> = ({ src, onClick = () => {} }) => (
       <Overlay>
         <ProductItemToast />
       </Overlay>
-      <Image layout="fill" src={src} />
+      <WorkItem>
+        <Image layout="fill" objectFit="contain" src={src} />
+      </WorkItem>
     </Container>
   </>
 );

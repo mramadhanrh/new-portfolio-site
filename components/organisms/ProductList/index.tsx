@@ -27,7 +27,7 @@ const ProductList = forwardRef<HTMLDivElement>((_, ref) => {
         <Col span={22}>
           <GridContainer>
             {new Array(20)
-              .fill('https://source.unsplash.com/search/photos?query=tech')
+              .fill('https://source.unsplash.com/random')
               .map((url, i) => (
                 <ProductItem
                   key={i.toString()}

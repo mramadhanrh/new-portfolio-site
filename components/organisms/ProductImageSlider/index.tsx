@@ -1,9 +1,14 @@
 import { FC, useMemo, useState } from 'react';
+import Icon from '@ant-design/icons';
+import Button from 'components/atoms/Button';
+import Image from 'next/image';
 import {
   Container,
   DotStep,
   GradientOverlay,
-  Image,
+  ProductImage,
+  NavButton,
+  NavWrapper,
   StepWrapper,
 } from './style';
 
@@ -62,10 +67,40 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
   };
 
   return (
-    <Container onClick={() => handleClick(true)}>
+    <Container>
       <GradientOverlay />
+
+      <NavWrapper>
+        <NavButton
+          variant="primary"
+          style={{ borderRadius: 100 }}
+          onClick={() => handleClick(false)}
+        >
+          <Image
+            alt="slider-previous"
+            src="/chevron-left.svg"
+            layout="raw"
+            width="12px"
+            height="12px"
+          />
+        </NavButton>
+        <NavButton
+          variant="primary"
+          style={{ borderRadius: 100 }}
+          onClick={() => handleClick(true)}
+        >
+          <Image
+            alt="slider-next"
+            src="/chevron-right.svg"
+            layout="raw"
+            width="12px"
+            height="12px"
+          />
+        </NavButton>
+      </NavWrapper>
+
       {imageList.map((item, i) => (
-        <Image
+        <ProductImage
           key={i.toString()}
           style={{ transitionDuration: getTransition(i) }}
           offset={getOffset(i)}
@@ -73,6 +108,7 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
           onTransitionEnd={i === activeIndex ? handleTransitionEnd : undefined}
         />
       ))}
+
       <StepWrapper>
         {data.map((_, i) => (
           <DotStep active={i === currentIndex} key={i.toString()} />

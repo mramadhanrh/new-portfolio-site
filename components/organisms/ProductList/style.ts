@@ -43,7 +43,7 @@ export const GridContainer = styled.div`
 `;
 
 export const WorkItem = styled.div`
-  & > div {
+  & > span {
     position: unset !important;
 
     & > img {

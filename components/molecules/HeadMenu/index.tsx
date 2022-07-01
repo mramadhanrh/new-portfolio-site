@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Row, Col } from 'antd';
 import Button from 'components/atoms/Button';
-import NavButton from 'components/atoms/NavButton';
+import HamburgerButton from 'components/atoms/HamburgerButton';
 import { HeadMenuList } from 'interfaces';
 
 interface HeadMenuProps {
@@ -36,7 +36,7 @@ const HeadMenu: FC<HeadMenuProps> = ({
         <Col md={24} lg={0}>
           <Row justify="end">
             <Col>
-              <NavButton />
+              <HamburgerButton />
             </Col>
           </Row>
         </Col>

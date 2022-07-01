@@ -1,3 +1,5 @@
+import Button from 'components/atoms/Button';
+import { mediaBreakpoint } from 'constants/breakpoint';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -30,7 +32,7 @@ export const GradientOverlay = styled.div`
   }
 `;
 
-export const Image = styled.img<{ offset?: number | string }>`
+export const ProductImage = styled.img<{ offset?: number | string }>`
   position: absolute;
   top: 0;
   left: ${({ offset = 0 }) => offset};
@@ -60,4 +62,37 @@ export const DotStep = styled.div<{ active?: boolean }>`
   transform: ${({ active }) => `scale(${active ? 1 : 0.8})`};
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-property: opacity, transform;
+`;
+
+export const NavWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+`;
+
+export const NavButton = styled(Button)`
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 17px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > div {
+    width: 12px;
+    height: 12px;
+  }
+
+  ${mediaBreakpoint.lg} {
+    width: 42px;
+    height: 42px;
+  }
 `;
