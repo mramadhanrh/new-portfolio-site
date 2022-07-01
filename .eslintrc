@@ -55,10 +55,10 @@
   },
   "overrides": [
     {
+      "files": ["*.ts"],
       "rules": {
         "import/prefer-default-export": "off"
-      },
-      "files": ["*.ts"]
+      }
     }
   ]
 }
