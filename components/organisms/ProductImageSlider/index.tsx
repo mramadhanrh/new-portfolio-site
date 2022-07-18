@@ -1,7 +1,7 @@
 import { FC, useMemo, useState } from 'react';
 import Icon from '@ant-design/icons';
 import Button from 'components/atoms/Button';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import {
   Container,
   DotStep,
@@ -79,9 +79,8 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
           <Image
             alt="slider-previous"
             src="/chevron-left.svg"
-            layout="raw"
-            width="12px"
-            height="12px"
+            width={12}
+            height={12}
           />
         </NavButton>
         <NavButton
@@ -92,9 +91,8 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
           <Image
             alt="slider-next"
             src="/chevron-right.svg"
-            layout="raw"
-            width="12px"
-            height="12px"
+            width={12}
+            height={12}
           />
         </NavButton>
       </NavWrapper>
