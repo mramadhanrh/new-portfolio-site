@@ -20,7 +20,7 @@ const ProductModal: FC<ProductModalProps> = ({
   description = '',
   ...props
 }) => (
-  <ModalContainer width="100%" footer={null} {...props}>
+  <ModalContainer width="100%" footer={null} destroyOnClose {...props}>
     <ProductRow>
       <Col xs={24} lg={11}>
         <ProductImageSlider />

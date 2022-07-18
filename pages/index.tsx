@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 import { createRef, FC, RefObject, useRef } from 'react';
+import Head from 'next/head';
 import withThemes from 'components/hoc/withThemes';
 import Hero from 'components/organisms/Hero';
 import Footer from 'components/organisms/Footer';
@@ -32,6 +33,9 @@ const Home: FC<HomeProps> = ({ data }) => {
 
   return (
     <Container>
+      <Head>
+        <title>Hi, It&apos;s Me Ramadhan Your Frontend Engineer</title>
+      </Head>
       <Header
         menuUrl={{ Blog: 'https://medium.com/@mramadhanrh' }}
         onMenuClick={handleMenuClick}

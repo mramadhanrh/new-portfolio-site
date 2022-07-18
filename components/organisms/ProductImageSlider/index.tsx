@@ -1,6 +1,4 @@
 import { FC, useMemo, useState } from 'react';
-import Icon from '@ant-design/icons';
-import Button from 'components/atoms/Button';
 import Image from 'next/future/image';
 import {
   Container,
