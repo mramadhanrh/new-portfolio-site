@@ -33,7 +33,7 @@ const Home: FC<HomeProps> = ({ data }) => {
   return (
     <Container>
       <Header
-        menuUrl={{ Blog: 'https://google.com' }}
+        menuUrl={{ Blog: 'https://medium.com/@mramadhanrh' }}
         onMenuClick={handleMenuClick}
       />
       <Hero {...hero} />
