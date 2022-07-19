@@ -1,0 +1,59 @@
+{
+  "work_list": [
+    {
+      "title": "LEVIO CLASS",
+      "description": "Levio Class is a live quiz web application, which engages users to compete within the quiz session, the web apps consist of navigators used by the admin and client-side web apps used by the end user, built with React Js, Redux, React Router, and Firebase.",
+      "subtitle": "App Development",
+      "thumbnail": "/portfolio/Levio Class Client - Banner.png",
+      "creation_date": "2018",
+      "image_list": ["/portfolio/Levio Class Client - Banner.png"],
+      "tags": [
+        {
+          "name": "Web Development",
+          "color": "primary",
+          "shadow_color": "pizzaz"
+        },
+        {
+          "name": "React Js",
+          "color": "primary",
+          "shadow_color": "pizzaz"
+        },
+        {
+          "name": "Next Js",
+          "color": "primary",
+          "shadow_color": "pizzaz"
+        }
+      ]
+    },
+    {
+      "title": "SHOPEE BUBBLE",
+      "description": "Lorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum ShopeeLorem ipsum Shopee",
+      "subtitle": "Web Development - Games",
+      "thumbnail": "/portfolio/Shopee Bubble - Banner.png",
+      "creation_date": "2021",
+      "image_list": [
+        "/portfolio/Shopee Bubble - Banner.png",
+        "/portfolio/Shopee Bubble 2 - Banner.png",
+        "/portfolio/Shopee Bubble 3 - Banner.png",
+        "/portfolio/Shopee Bubble 4 - Banner.png"
+      ],
+      "tags": [
+        {
+          "name": "Web Development",
+          "color": "primary",
+          "shadow_color": "pizzaz"
+        },
+        {
+          "name": "Game Development",
+          "color": "primary",
+          "shadow_color": "pizzaz"
+        },
+        {
+          "name": "React Js",
+          "color": "primary",
+          "shadow_color": "pizzaz"
+        }
+      ]
+    }
+  ]
+}

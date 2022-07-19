@@ -59,6 +59,12 @@
       "rules": {
         "import/prefer-default-export": "off"
       }
+    },
+    {
+      "files": ["interfaces/*.ts"],
+      "rules": {
+        "camelcase": "off"
+      }
     }
   ]
 }

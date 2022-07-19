@@ -10,13 +10,11 @@ import {
   StepWrapper,
 } from './style';
 
-const ProductImageSlider: FC<{ data?: string[] }> = ({
-  data = [
-    'sample-modal-pic0.png',
-    'sample-modal-pic1.png',
-    'sample-modal-pic2.png',
-  ],
-}) => {
+interface ProductImageSliderProps {
+  data?: string[];
+}
+
+const ProductImageSlider: FC<ProductImageSliderProps> = ({ data = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isOnTransition, setOnTransition] = useState(false);
   const [isNextDirection, setNextDirection] = useState(false);
@@ -68,32 +66,34 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
     <Container>
       <GradientOverlay />
 
-      <NavWrapper>
-        <NavButton
-          variant="primary"
-          style={{ borderRadius: 100 }}
-          onClick={() => handleClick(false)}
-        >
-          <Image
-            alt="slider-previous"
-            src="/chevron-left.svg"
-            width={12}
-            height={12}
-          />
-        </NavButton>
-        <NavButton
-          variant="primary"
-          style={{ borderRadius: 100 }}
-          onClick={() => handleClick(true)}
-        >
-          <Image
-            alt="slider-next"
-            src="/chevron-right.svg"
-            width={12}
-            height={12}
-          />
-        </NavButton>
-      </NavWrapper>
+      {data.length > 1 && (
+        <NavWrapper>
+          <NavButton
+            variant="primary"
+            style={{ borderRadius: 100 }}
+            onClick={() => handleClick(false)}
+          >
+            <Image
+              alt="slider-previous"
+              src="/chevron-left.svg"
+              width={12}
+              height={12}
+            />
+          </NavButton>
+          <NavButton
+            variant="primary"
+            style={{ borderRadius: 100 }}
+            onClick={() => handleClick(true)}
+          >
+            <Image
+              alt="slider-next"
+              src="/chevron-right.svg"
+              width={12}
+              height={12}
+            />
+          </NavButton>
+        </NavWrapper>
+      )}
 
       {imageList.map((item, i) => (
         <ProductImage
@@ -105,11 +105,13 @@ const ProductImageSlider: FC<{ data?: string[] }> = ({
         />
       ))}
 
-      <StepWrapper>
-        {data.map((_, i) => (
-          <DotStep active={i === currentIndex} key={i.toString()} />
-        ))}
-      </StepWrapper>
+      {data.length > 1 && (
+        <StepWrapper>
+          {data.map((_, i) => (
+            <DotStep active={i === currentIndex} key={i.toString()} />
+          ))}
+        </StepWrapper>
+      )}
     </Container>
   );
 };

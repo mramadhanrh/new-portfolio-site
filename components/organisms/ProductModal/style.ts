@@ -71,14 +71,22 @@ export const ImageOverlay = styled.div`
 `;
 
 export const ContentCol = styled(Col)`
-  padding: 25px 30px 25px;
+  padding: 25px 30px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  overflow: auto;
+  min-height: unset;
+
+  & > div:first-child {
+    flex: 1;
+  }
 
   ${mediaBreakpoint.lg} {
     padding: 48px 30px 25px;
+
+    & > div:first-child {
+      overflow: auto;
+      margin-bottom: 25px;
+    }
   }
 `;
 
@@ -86,6 +94,7 @@ export const ProductRow = styled(Row)`
   width: 100%;
   flex-flow: column;
   flex-direction: column;
+  overflow: auto;
 
   & > .ant-col {
     flex: auto;
@@ -96,6 +105,7 @@ export const ProductRow = styled(Row)`
   }
 
   ${mediaBreakpoint.lg} {
+    overflow: hidden;
     flex-flow: row;
     flex-direction: row;
 
@@ -112,32 +122,47 @@ export const Description = styled.p`
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-  margin: 0;
+  margin: 0 0 25px;
 `;
 
 export const ProductName = styled.h1`
   margin: 0;
+  font-size: 32px;
   font-weight: 800;
-  font-size: 48px;
-  line-height: 72px;
+  line-height: 38px;
   text-align: right;
   color: ${({ theme }) => theme.textColor.primary};
+
+  ${mediaBreakpoint.lg} {
+    font-size: 48px;
+    line-height: 72px;
+  }
 `;
 
 export const ProductTech = styled.h3`
-  margin: 0;
+  margin: 0 25px 0 0;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 12px;
+  line-height: 16px;
   color: ${({ theme }) => theme.textColor.secondary};
+
+  ${mediaBreakpoint.lg} {
+    font-size: 18px;
+    line-height: 27px;
+  }
 `;
 
 export const CreationDate = styled.h6`
   margin: 0;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 12px;
+  line-height: 16px;
   color: ${({ theme }) => theme.color.alto};
+
+  ${mediaBreakpoint.lg} {
+    font-size: 18px;
+    line-height: 27px;
+  }
 `;
 
 export const CloseButton = styled(Button)`

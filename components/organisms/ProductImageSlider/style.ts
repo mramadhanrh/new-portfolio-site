@@ -8,7 +8,7 @@ export const Container = styled.div`
   width: 100%;
   overflow: hidden;
   cursor: pointer;
-  min-height: 200px;
+  min-height: 600px;
 `;
 
 export const GradientOverlay = styled.div`
@@ -40,6 +40,7 @@ export const ProductImage = styled.img<{ offset?: number | string }>`
   height: 100%;
   object-fit: cover;
   transition: 1s left cubic-bezier(0.215, 0.61, 0.355, 1);
+  object-position: top;
 `;
 
 export const StepWrapper = styled.div`

@@ -13,6 +13,7 @@ import WorkInquiry from 'components/organisms/WorkInquiry';
 import { Container } from 'styles/HomeStyle';
 import { LandingData } from 'interfaces/landing';
 import { HeadMenuList } from 'interfaces';
+import worksJson from '../json/works.json';
 
 interface HomeProps {
   data: LandingData;
@@ -42,7 +43,7 @@ const Home: FC<HomeProps> = ({ data }) => {
       />
       <Hero {...hero} />
       <BioInfo ref={headMenuRef.current.Services} />
-      <ProductList ref={headMenuRef.current.Work} />
+      <ProductList ref={headMenuRef.current.Work} data={worksJson.work_list} />
       <WorkInquiry ref={headMenuRef.current.Contact} />
       <Footer />
     </Container>
