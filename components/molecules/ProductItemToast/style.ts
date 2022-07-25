@@ -26,6 +26,8 @@ export const Title = styled.h1`
 
   text-shadow: 2px 2px 0px ${({ theme }) => theme.color.secondary};
   margin: 0;
+
+  word-break: break-word;
 `;
 
 export const TagContainer = styled.div`

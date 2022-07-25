@@ -14,6 +14,7 @@ const defaultTheme: DefaultTheme = {
     pizzaz: '#FB8C00',
     tussock: '#BB883C',
     grey: '#D4D4D4',
+    alto: '#D5D5D5',
   },
   textColor: {
     primary: '#754600',
@@ -24,11 +25,13 @@ const defaultTheme: DefaultTheme = {
     primary: '#754600',
     secondary: '#F86F22',
     text: 'transparent',
+    link: 'transparent',
   },
   buttonTextColor: {
     primary: '#FFFFFF',
     secondary: '#000000',
     text: '#000000',
+    link: '#000000',
   },
 };
 

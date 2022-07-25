@@ -1,11 +1,7 @@
 import { FC } from 'react';
+import { AppProps } from 'next/app';
 import GlobalStyle from '../styles/GlobalStyle';
 import 'antd/dist/antd.css';
-
-interface AppProps {
-  Component: FC;
-  pageProps: Record<string, any>;
-}
 
 const App: FC<AppProps> = ({ Component, pageProps }) => (
   <>

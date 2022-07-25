@@ -7,9 +7,27 @@ const InquiryDetail: FC = () => (
     <h4>Bandung, West Java</h4>
     <h2>hi.mramadhanrh@gmail.com</h2>
     <MediaWrapper>
-      <ButtonIcon src="/linkedin-icon.png" size={50} />
-      <ButtonIcon src="/github-icon.png" size={50} />
-      <ButtonIcon src="/twitter-icon.png" size={50} />
+      <a
+        href="https://linkedin.com/in/mramadhanrh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ButtonIcon src="/linkedin-icon.svg" size={50} />
+      </a>
+      <a
+        href="https://github.com/mramadhanrh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ButtonIcon src="/github-icon.svg" size={50} />
+      </a>
+      <a
+        href="https://twitter.com/mramadhanrh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ButtonIcon src="/twitter-icon.svg" size={50} />
+      </a>
     </MediaWrapper>
   </Container>
 );

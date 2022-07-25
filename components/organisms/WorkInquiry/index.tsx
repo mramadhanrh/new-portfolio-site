@@ -1,12 +1,12 @@
-import { FC } from 'react';
-import InquiryCard from 'components/molecules/InquiryCard';
+import { forwardRef } from 'react';
 import { Row, Col } from 'antd';
+import InquiryCard from 'components/molecules/InquiryCard';
 import InquiryDetail from 'components/molecules/InquiryDetail';
 
-const WorkInquiry: FC = () => (
+const WorkInquiry = forwardRef<HTMLDivElement>((_, ref) => (
   <>
-    <Row align="middle" justify="center">
-      <Col span={18}>
+    <Row ref={ref} align="middle" justify="center">
+      <Col xs={20} md={18}>
         <InquiryCard />
       </Col>
     </Row>
@@ -16,6 +16,6 @@ const WorkInquiry: FC = () => (
       </Col>
     </Row>
   </>
-);
+));
 
 export default WorkInquiry;

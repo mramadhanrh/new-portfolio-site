@@ -11,7 +11,9 @@
     "plugin:react-hooks/recommended",
     "airbnb",
     "prettier",
-    "plugin:@next/next/recommended"
+    "plugin:@next/next/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "env": {
     "browser": true,
@@ -33,7 +35,7 @@
       }
     }
   },
-  "plugins": [],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "linebreak-style": "off",
     "space-infix-ops": "off",
@@ -45,14 +47,24 @@
     "import/extensions": "off",
     "arrow-body-style": "warn",
     "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-empty-function": "off"
   },
   "overrides": [
     {
+      "files": ["*.ts"],
       "rules": {
         "import/prefer-default-export": "off"
-      },
-      "files": ["*.ts"]
+      }
+    },
+    {
+      "files": ["interfaces/*.ts"],
+      "rules": {
+        "camelcase": "off"
+      }
     }
   ]
 }
